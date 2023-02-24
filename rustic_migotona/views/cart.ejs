@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://kit.fontawesome.com/68bc1fc849.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet"  href="css/cart_styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/68bc1fc849.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/cart_styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <main class="main">
+      <div class="main_1"><!--Red--></div>
 
-    </head>
-    <body>
-        <%- include('./partials/header.ejs') %> 
-        <main class="main">
-            <div class="main_1"><!--Red--></div>
-            
-            <div class="main_2" style="background-image: url(imagenes/elf2.jpg); background-size: cover;">
-                <i class="fa-brands fa-cc-paypal fa-2x" style="color: white; float:inline-end"></i>
-            </div>
-            <div class="main_3">
-                <div class="main_3_1"></div>
-                <div class="main_3_2">
-                    
-                    <h1 style="color: darkred;">Pago y Entrega</h1>
-                    <div style="background-color: white; height: 70%; width: 70%; align-items: center; display: flex;">
-                    <form action="">
-                        <input type="checkbox" id="tienda">
-                        <label for="tienda"><i style="font-size: 2vw">Recoger en tienda</i></label><br>
-                        <input type="checkbox" id="casa">
-                        <label for="casa"><i style="font-size: 2vw">Recoger a domicilio</i></label><br>
-                    </form>
-                    </div>
-                </div>
-                <div class="main_3_3">
-                    <div style="flex-direction: row; align-items:center; display: flex; height: 50%; justify-content: space-around; width: 100%;">
-                        <h1 >Total</h1>
-                        <div class="main_1_3_1_price_display" id="total_compra"></div>
+      <div
+        class="main_2"
+        style="background-image: url(imagenes/elf2.jpg); background-size: cover"
+      >
+        <i
+          class="fa-brands fa-cc-paypal fa-2x"
+          style="color: white; float: inline-end"
+        ></i>
+      </div>
+      <div class="main_3">
+        <div class="main_3_1"></div>
+        <div class="main_3_2">
+          <h1 style="color: darkred">Pago y Entrega</h1>
+          <div
+            style="
+              background-color: white;
+              height: 70%;
+              width: 70%;
+              align-items: center;
+              display: flex;
+            "
+          >
+            <form action="">
+              <input type="checkbox" id="tienda" />
+              <label for="tienda"
+                ><i style="font-size: 2vw">Recoger en tienda</i></label
+              ><br />
+              <input type="checkbox" id="casa" />
+              <label for="casa"
+                ><i style="font-size: 2vw">Recoger a domicilio</i></label
+              ><br />
+            </form>
+          </div>
+        </div>
+        <div class="main_3_3">
+          <div
+            style="
+              flex-direction: row;
+              align-items: center;
+              display: flex;
+              height: 50%;
+              justify-content: space-around;
+              width: 100%;
+            "
+          >
+            <h1>Total</h1>
+            <div class="main_1_3_1_price_display" id="total_compra"></div>
+          </div>
 
-                    </div>
-                    
-                    <button style="background-color: black; width: 20vw; float: right; border-radius: 5%;"><i style="color: red;">Comprar</i></button>
-                </div>
-            </div>
-
-        </main>
-        <%- include('./partials/footer.ejs') %> 
-    </body>
-    <script src="./scrpits_js/addCart.js" type="module"></script>
-    
+          <button
+            style="
+              background-color: black;
+              width: 20vw;
+              float: right;
+              border-radius: 5%;
+            "
+          >
+            <i style="color: red">Comprar</i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+  <script src="./scrpits_js/addCart.js" type="module"></script>
 </html>

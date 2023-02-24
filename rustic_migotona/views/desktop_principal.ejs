@@ -12,7 +12,7 @@
                 <h1 style="color: white;"><p style="font-size: 3vw;">Categorias</p></h1>
             <div class="main_container_izq_2">
             <button class="botones" id="boton23"><p style="font-size: 2vw;">Juegos de Mesa</p></button><!--boton juegos de mesa-->
-            <button class="botones"><p style="font-size: 2vw;">TCG</p></button><!--boton tcg-->
+            <form  action="/tcg" method="get"><button class="botones">TCG</button></form><!--boton tcg-->
             <button class="botones"><p style="font-size: 2vw;">Libros de Terror</p></button><!--boton libros de terror-->
             <button class="botones"><p style="font-size: 2vw;">Manga</p></button><!--boton manga-->
             </div>
@@ -20,6 +20,7 @@
             <div class="main_container_der">
                 <h1 style="color: white;">Juegos de Mesa</h1><!--display categoria del producto como ejemplo juegos de mesa-->
             <div class="main_container_der_2">
+                
                 <% productos.forEach(element => { %>
                     <div class="main_container_der_3"><!--Listado de productos , un producto en cada div-->
                         <div><p class="p_der_2" id="<%= element.id %>"> <%= element.nombre %> </p></div><!--titulo-->
@@ -59,6 +60,6 @@
         <%- include('./partials/footer.ejs') %> 
         
     </body>
-    
+    <!-- <script src="./scrpits_js/desktop_products.js"></script> -->
  
 </html>
