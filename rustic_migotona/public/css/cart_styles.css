@@ -1,771 +1,242 @@
 /*body*/
-.body_container{
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between
-    width: 100%;
-    /* height: 100vw; */
-    /* margin: 0px; */
-    
-    overflow-x: hidden; 
-    
+.body_container {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 100vw; */
+  /* margin: 0px; */
 
-    
-
+  overflow-x: hidden;
 }
-
-
-
 
 /*Otros*/
 @font-face {
-    font-family: myFirstFont;
-    src: url(../fonts/Silkscreen-Bold.ttf);
-    
+  font-family: myFirstFont;
+  src: url(../fonts/Silkscreen-Bold.ttf);
 }
 
 @font-face {
-   
-    font-family: second_font;
-    src: url(../fonts/DynaPuff-Bold.ttf);
-    
+  font-family: second_font;
+  src: url(../fonts/DynaPuff-Bold.ttf);
 }
 
-
-.fonts{
-    font-family: myFirstFont;
+.fonts {
+  font-family: myFirstFont;
 }
 
-html *{
-    font-family: second_font;
-    
-    
+html * {
+  font-family: second_font;
 }
 
-
-
-
-/************************************Header***Mobile*************************************************/
-
-.header_container0 {
-    flex-direction: row;
-    display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
-    padding-left: 0px;
-    width: 100%;
-    margin: 0;
-    
-    
-    
-        
-        
-}
-
-    
-.header_container1 {
-    flex-direction: column;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    width: 60%;
-        
-}
-
-.header_container2 {   
-    flex-direction: column;
-    display: flex;
-    align-items: baseline;
-        
-    width: 100%;
-        
-        
-}
-
-.header_container3 {
-    flex-direction: row;
-    display: flex;
-    width: 100%;
-        
-    justify-content: left;
-        
-}
-
-.header_container4 {
-    flex-direction: row;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    width: 100%;
-    height: 2px;
-        
-        
-}
-
-.header_container5 {
-    flex-direction: row;
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-       
-    
-        
-        
-}
-
-
-
-
-.hi1{
-    flex-direction: column;
-    justify-content: center;
-    background-color: black;
-    display: flex;
-    
-        
-    width: 100%;
-    font-family: myFirstFont ;
-        
-    text-align: left;
-        
-    align-items: flex-start;
-}
-
-.hi2{
-    flex-direction: row;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 500px;
-        
-    font-size: 20px;
-    visibility: visible;
-    color: red;
-        
-}   
-    
-.hi3{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2px;
-        
-        
-    visibility: hidden;
-        
-}
-    
-.hi4{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2px;
-    visibility: hidden;
-        
-        
-        
-}
-    
-.hi5{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 30px;
-    font-family: second_font;
-    width: 50%;
-    visibility: hidden;
-        
-}
-    
-.hi6{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 30px;
-    visibility: hidden;
-        
-    width: 50%;
-    
-        
-        
-}
-
-.hi_map{
-    
-        
-    visibility: hidden;
-        
-        
-}
-
-
-.bar_menu{
-    visibility: visible;
-    color: white;
-    
-    padding: 10px;
-}
-
-.map_bar_menu{
-    flex-direction: row;
-    display: flex;
-}
-
-
-.title_container{
-    flex-direction: row;
-    display: flex;
-    
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-        
-}
-   
-
-.logo{
-    width: 40%;
-    height: 80%;
-        
-}
-
-
-   
-
-p{
-    font-size: 5vw;
-}
 /*************************MAIN****************************MOBILE**********************************/
-.main{
-    flex-direction: column;
-    display: flex;
-    
-
+.main {
+  flex-direction: column;
+  display: flex;
 }
-.main_1{
-    flex-direction: column;
-    /* background-image: url('../imagenes/elf2.jpg'); */
-    justify-content: space-evenly;
-    display: flex;
-    width: 98%;
-    
-    /* height: 800px; */
-    
-    /*border: solid red 2px;*/
+.main_1 {
+  flex-direction: column;
+  /* background-image: url('../imagenes/elf2.jpg'); */
+  justify-content: space-evenly;
+  display: flex;
+  width: 98%;
 
+  /* height: 800px; */
+
+  /*border: solid red 2px;*/
 }
 
-.main_1_1{
-    flex-direction: row;
-    display: flex;
-    
-    width: 100%;
-    /* height: 100%; */
-    margin: 0;
-    
-    
-    /*border: solid yellow 2px;*/
+.main_1_1 {
+  flex-direction: row;
+  display: flex;
+
+  width: 100%;
+  /* height: 100%; */
+  margin: 0;
+
+  /*border: solid yellow 2px;*/
 }
 
-.main_1_2{
-    width: 33%;
-    height: 100%;
-    /*border: solid blue 2px;*/
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.main_1_2 {
+  width: 33%;
+  height: 100%;
+  /*border: solid blue 2px;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 /*Product Box*/
-.p_box{
-
-    /*border: solid black 2px;*/
-    border-radius: 10%;
-    height: 25vw;
-    width: 25vw;
-    
+.p_box {
+  /*border: solid black 2px;*/
+  border-radius: 10%;
+  height: 25vw;
+  width: 25vw;
 }
 
-
-
-.main_1_3{
-    flex-direction: column;
-    display: flex;
-    /* width: 69%; */
-    height: 100%;
-    /*border: solid green 2px;*/
+.main_1_3 {
+  flex-direction: column;
+  display: flex;
+  /* width: 69%; */
+  height: 100%;
+  /*border: solid green 2px;*/
 }
 
-.main_1_3_1{
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    height: 49%;
-    /*border: solid black 2px;*/
-
+.main_1_3_1 {
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 49%;
+  /*border: solid black 2px;*/
 }
 
-.main_1_3_1_price_display{
-    text-align: center;
-    padding-top: 30px;
-    font-size: 4vh;
-    border: solid black 2px;
-    height: 70%;
-    width: 50%;
-    background-color: white;
+.main_1_3_1_price_display {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 4vh;
+  border: solid black 2px;
+  height: 70%;
+  width: 50%;
+  background-color: white;
 }
 
 /*Button Box*/
-.boton_container{
-    width: 70%;
-    height: 70%;
-    background-color: gray;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    border: 2px;
-    border-radius: 5%;
+.boton_container {
+  width: 70%;
+  height: 70%;
+  background-color: gray;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  border: 2px;
+  border-radius: 5%;
 }
 
-.display_box{
-    height: 80%;
-    width: 30%;
-    border: solid black 2px;
-    background-color: white;
+.display_box {
+  height: 80%;
+  width: 30%;
+  border: solid black 2px;
+  background-color: white;
 }
 
-
-
-.main_2{
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    display: flex;
-    height: 0px;
-    visibility: hidden;
-    
+.main_2 {
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  height: 0px;
+  visibility: hidden;
 }
 
-.main_3{
-    flex-direction: column;
-    display: flex;
-    width: 98%;
-    height: 200px;
-    /*border: solid blue 2px;*/
-    /*Imagen*/
-    background-image: url('../imagenes/deliveryproduct.jpg');
-    background-size: cover;
+.main_3 {
+  flex-direction: column;
+  display: flex;
+  width: 98%;
+  height: 200px;
+  /*border: solid blue 2px;*/
+  /*Imagen*/
+  background-image: url("../imagenes/deliveryproduct.jpg");
+  background-size: cover;
 }
 
-.main_3_1{
-    width: 100%;
-    height: 0%;
-    /*border: solid red 2px;*/
-    
-
+.main_3_1 {
+  width: 100%;
+  height: 0%;
+  /*border: solid red 2px;*/
 }
 
-.main_3_2{
-    flex-direction: column;
-    align-items: center; 
-    display: flex;
-    width: 100%;
-    height: 0%;
-    /*border: solid yellow 2px;*/
-    visibility: hidden;
+.main_3_2 {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 0%;
+  /*border: solid yellow 2px;*/
+  visibility: hidden;
 }
 
-.main_3_3{
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    height: 98%;
-    /*border: solid cyan 2px;*/
-}
-
-/*******************************************FOOTER********Mobile*********************************/
-
-.footer_container {
-    flex-direction: row-reverse;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    width: 100%;
-    
-}
-    
-.fc1{
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    width: 30%;
-        
-        
-}
-    
-.fc2{
-    flex-direction: row;
-    display: flex;
-    align-items: flex-end;
-    justify-content: left;
-        
-    width: 5%;
-    visibility: hidden;
-}
-    
-.fc3{
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-    font-family: second_font ;
-    align-items: center;
-    width: 5%;
-    visibility: hidden;
-        
-}
-    
-   
-
-.playstore_icon{
-    flex-direction: column;
-    display: flex;
-    visibility: visible;
-    color: white;
-    align-items: center;
-    gap: 5px;
-    width: 60%;
-    height: 100%;
-        
-        
-}
-
-.icon_p{
-    flex-direction: row;
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-    align-items: center;
-        
-}
-
-.p_icon{
-    color: white;
-    font-size: 5vw;
+.main_3_3 {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 98%;
+  /*border: solid cyan 2px;*/
 }
 
 /***************************************Media Query**************************************************/
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
+  /*************************MAIN****************************DESKTOP**********************************/
+  .main {
+    flex-direction: row;
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    justify-content: center;
+    /* height: max-content; */
+    height: 100vh;
+  }
+  .main_1 {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 100vh;
+    background-image: none;
+    /*border: solid red 2px;*/
+    margin: 0;
+    overflow: auto;
+  }
 
-    /********************************HEADER****DESKTOP*********************************************/
-    .header_container0 {
-    
-   
-        background-color: black;
-        
-        
-        
-        
-        
-    }
-    
-    .header_container1 {
-        flex-direction: row;
-        
-        width: 80%;
-        
-    }
-    
-    .header_container2 {   
-        
-        
-        width: 80%;
-        
-    }
-    
-    .header_container3 {
-        
-        height: 33.33%;
-        justify-content: center;
-        justify-content: space-between;
-        visibility: visible;
-        flex-wrap: wrap;
-        
-       
-        
-    }
-    
-    .header_container4 {
-        
-        
-        justify-content: space-between;
-        
-        height: 33.33%;
-        flex-wrap: wrap;
-        
-    }
-    
-    .header_container5 {
-        flex-direction: column;
-        display: flex;
-        flex-wrap: wrap;
-        width: 20%;
-        
-        justify-content: space-between;
-        
-        
-    }
-    
-    
-    
-    
-    
-    .hi1{
-        
-    
-        height: 33.33%;
-        
-    }
-    
-    .hi2{
-        
-        flex-wrap: wrap;
-        justify-content: center;
-        
-        width: 33.33%;
-        color: white;
-        font-size: 30px;
-        gap: 20px;
-        
-    }   
-    
-    .hi3{
-        flex-direction: row;
-        display: flex;
-        flex-wrap: wrap;
-        
-        font-size: 30px;
-        width: 33.33%;
-        color: white;
-        font-weight: 700;
-        gap: 20px;
-        visibility: visible;
-    }
-    
-    .hi4{
-        flex-direction: row;
-        display: flex;
-        flex-wrap: wrap;
-        
-        font-size: 30px;
-        gap: 20px;
-        visibility: visible;
-        
-        
-        
-        width: 33.33%;
-    }
-    
-    .hi5{
-        
-        flex-wrap: wrap;
-        
-        visibility: visible;
-        
-    }
-    
-    .hi6{
-        flex-direction: row;
-        
-        display: flex;
-        flex-wrap: wrap;
-        
-        gap: 20px;
-        
-        visibility: visible;
-    
-        
-        
-    }
-    
-    .hi_map{
-        
-        padding-left: 50%;
-        
-        
-        height: 50%;
-        width: 50%;
-        visibility: visible;
-        
-        
-    }
-    
-    .bar_menu{
-        visibility: hidden;
-    }
-    
-    
-    
-    .title_container{
-        
-        gap: 20px;
-    }
+  .main_2 {
+    width: 19%;
+    height: 100vh;
+    /*border: solid green 2px;*/
+    visibility: visible;
+    margin: 0;
+  }
 
-    /*************************MAIN****************************DESKTOP**********************************/
-    .main{
-        flex-direction: row;
-        display: flex;
-        margin: 0;
-        overflow: hidden;
-        justify-content: center;
-        /* height: max-content; */
-        height: 100vh;
-        
-        
-        
-
-    }
-    .main_1{
-        flex-direction: column;
-        justify-content: space-between;
-        width: 40%;
-        height: 100vh;
-        background-image: none;
-        /*border: solid red 2px;*/
-        margin: 0;
-        overflow: auto;
-        
-
-
-    }
-
-    .main_2{
-        width: 19%;
-        height: 100vh;
-        /*border: solid green 2px;*/
-        visibility: visible;
-        margin: 0;
-    }
-
-    /*Product Box*/
-.p_box{
-
+  /*Product Box*/
+  .p_box {
     height: 8vw;
     width: 8vw;
-    
-}
+  }
 
-    .main_3{
-        margin: 0;
-        width: 40%;
-        height: 100vh;
-        /*border: solid blue 2px;*/
-    }
+  .main_3 {
+    margin: 0;
+    width: 40%;
+    height: 100vh;
+    /*border: solid blue 2px;*/
+  }
 
-    .main_3_1{
-        width: 100%;
-        height: 39%;
-        /*border: solid red 2px;*/
-    }
-    
-    .main_3_2{
-        width: 100%;
-        height: 39%;
-       /*border: solid yellow 2px;*/
-        visibility: visible;
-    }
-    
-    .main_3_3{
-        width: 100%;
-        height: 20%;
-        /*border: solid cyan 2px;*/
-    }
+  .main_3_1 {
+    width: 100%;
+    height: 39%;
+    /*border: solid red 2px;*/
+  }
 
-    /*Hide arrows input*/
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
+  .main_3_2 {
+    width: 100%;
+    height: 39%;
+    /*border: solid yellow 2px;*/
+    visibility: visible;
+  }
+
+  .main_3_3 {
+    width: 100%;
+    height: 20%;
+    /*border: solid cyan 2px;*/
+  }
+
+  /*Hide arrows input*/
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-    }
-    
-    
-    /******************************************FOOTER***************DESKTOP****************************/
-    .footer_container {
-    
-        flex-direction: row;
-        display: flex;
-        align-items: center;
-        
-    
-        height: 200px;
-        
-        flex-wrap: wrap;
-        
-        
-        
-        
-    }
-    
-    .fc1{
-        
-        color: red;
-        width: 10%;
-        
-        
-    }
-    
-    .fc2{
-        flex-direction: column;
-        display: flex;
-        flex-wrap: wrap;
-        
-        justify-content: center;
-        justify-content: space-between;
-        width: 20%;
-        visibility: visible;
-    }
-    
-    .fc3{
-        
-        width: 65%;
-        visibility: visible;
-        
-    }
-    
-    .logo{
-        width: 20%;
-        
-        
-    }
-    
-    .playstore_icon{
-        visibility: hidden;
-        height: 0px;
-        width: 5px;
-    }
-    
-    .p_icon{
-        
-        font-size: 0;
-    }
-    
-
+  }
 }

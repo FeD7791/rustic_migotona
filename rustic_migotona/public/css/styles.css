@@ -1,620 +1,115 @@
 /*body*/
-.body_container{
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100vw;
-    margin: 0px;
-    
-    overflow-x: hidden; 
+.body_container {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vw;
+  margin: 0px;
+
+  overflow-x: hidden;
 }
 
 /*Otros*/
 @font-face {
-    font-family: myFirstFont;
-    src: url(../fonts/Silkscreen-Bold.ttf);
-    
+  font-family: myFirstFont;
+  src: url(../fonts/Silkscreen-Bold.ttf);
 }
 
 @font-face {
-   
-    font-family: second_font;
-    src: url(../fonts/DynaPuff-Bold.ttf);
-    
+  font-family: second_font;
+  src: url(../fonts/DynaPuff-Bold.ttf);
 }
 
-
-.fonts{
-    font-family: myFirstFont;
+.fonts {
+  font-family: myFirstFont;
 }
 
-html *{
-    font-family: second_font;
-    
-    
-}
-
-/************************************Header***Mobile*************************************************/
-
-.header_container0 {
-    flex-direction: row;
-    display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
-    padding-left: 0px;
-    width: 100%;
-    margin: 0;
-    
-    
-    
-        
-        
-}
-
-    
-.header_container1 {
-    flex-direction: column;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    width: 60%;
-        
-}
-
-.header_container2 {   
-    flex-direction: column;
-    display: flex;
-    align-items: baseline;
-        
-    width: 100%;
-        
-        
-}
-
-.header_container3 {
-    flex-direction: row;
-    display: flex;
-    width: 100%;
-        
-    justify-content: left;
-        
-}
-
-.header_container4 {
-    flex-direction: row;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    width: 100%;
-    height: 2px;
-        
-        
-}
-
-.header_container5 {
-    flex-direction: row;
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-       
-    
-        
-        
-}
-
-
-
-
-.hi1{
-    flex-direction: column;
-    justify-content: center;
-    background-color: black;
-    display: flex;
-    
-        
-    width: 100%;
-    font-family: myFirstFont ;
-        
-    text-align: left;
-        
-    align-items: flex-start;
-}
-
-.hi2{
-    flex-direction: row;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 500px;
-        
-    font-size: 20px;
-    visibility: visible;
-    color: red;
-        
-}   
-    
-.hi3{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2px;
-        
-        
-    visibility: hidden;
-        
-}
-    
-.hi4{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2px;
-    visibility: hidden;
-        
-        
-        
-}
-    
-.hi5{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 30px;
-    font-family: second_font;
-    width: 50%;
-    visibility: hidden;
-        
-}
-    
-.hi6{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 30px;
-    visibility: hidden;
-        
-    width: 50%;
-    
-        
-        
-}
-
-.hi_map{
-    
-        
-    visibility: hidden;
-        
-        
-}
-
-
-.bar_menu{
-    visibility: visible;
-    color: white;
-    
-    padding: 10px;
-}
-
-.map_bar_menu{
-    flex-direction: row;
-    display: flex;
-}
-
-
-.title_container{
-    flex-direction: row;
-    display: flex;
-    
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-        
-}
-   
-
-.logo{
-    width: 40%;
-    height: 80%;
-        
-}
-
-
-   
-
-p{
-    font-size: 5vw;
-}
-
-/*******************************************FOOTER********Mobile*********************************/
-
-.footer_container {
-    flex-direction: row-reverse;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    width: 100%;
-    
-}
-    
-.fc1{
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    width: 30%;
-        
-        
-}
-    
-.fc2{
-    flex-direction: row;
-    display: flex;
-    align-items: flex-end;
-    justify-content: left;
-        
-    width: 5%;
-    visibility: hidden;
-}
-    
-.fc3{
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-    font-family: second_font ;
-    align-items: center;
-    width: 5%;
-    visibility: hidden;
-        
-}
-    
-   
-
-.playstore_icon{
-    flex-direction: column;
-    display: flex;
-    visibility: visible;
-    color: white;
-    align-items: center;
-    gap: 5px;
-    width: 60%;
-    height: 100%;
-        
-        
-}
-
-.icon_p{
-    flex-direction: row;
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-    align-items: center;
-        
-}
-
-.p_icon{
-    color: white;
-    font-size: 5vw;
+html * {
+  font-family: second_font;
 }
 
 /****************************************MAIN MOBILE*********************************************************/
-button:hover{
-    background-color: transparent;
+button:hover {
+  background-color: transparent;
 }
 
-.input_style{
-    box-sizing: border-box;
-    padding: 20px;
-    border: solid black 2px;
-    width: 40vw;
-    height: 5vw;
-    border-radius: 10px;
+.input_style {
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid black 2px;
+  width: 40vw;
+  height: 5vw;
+  border-radius: 10px;
 }
 
-.ingresar_button{
-    text-align: center;
-    box-sizing: border-box;
-    
-    border: solid black 2px;
-    width: 20vw;
-    height: 10vw;
-    border-radius: 10px;
+.ingresar_button {
+  text-align: center;
+  box-sizing: border-box;
 
+  border: solid black 2px;
+  width: 20vw;
+  height: 10vw;
+  border-radius: 10px;
 }
 
-.ingresar_button:hover{
-    background-color: transparent;
+.ingresar_button:hover {
+  background-color: transparent;
 }
 
-.formulario{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 98%;
+.formulario {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 98%;
 }
 
-.main{
-    flex-direction: row;
-    display: flex;
-
+.main {
+  flex-direction: row;
+  display: flex;
 }
 
-.main_izq{
-    /*border: solid blue 2px;*/
-    width: 1%;
-    background-image: none;
+.main_izq {
+  /*border: solid blue 2px;*/
+  width: 1%;
+  background-image: none;
 }
 
-.main_der{
-    /*border: solid red 2px;*/
-    width: 1%;
-    background-image: none;
+.main_der {
+  /*border: solid red 2px;*/
+  width: 1%;
+  background-image: none;
 }
 
 /***************************************Media Query**************************************************/
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
+  /*****************************************MAIN DESKTOP***********************************************/
+  .ingresar_button {
+    width: 20vw;
+    height: 5vw;
+    font-size: 2vw;
+  }
 
-    /********************************HEADER****DESKTOP*********************************************/
-    .header_container0 {
-    
-   
-        background-color: black;
-        
-        
-        
-        
-        
-    }
-    
-    .header_container1 {
-        flex-direction: row;
-        
-        width: 80%;
-        
-    }
-    
-    .header_container2 {   
-        
-        
-        width: 80%;
-        
-    }
-    
-    .header_container3 {
-        
-        height: 33.33%;
-        justify-content: center;
-        justify-content: space-between;
-        visibility: visible;
-        flex-wrap: wrap;
-        
-       
-        
-    }
-    
-    .header_container4 {
-        
-        
-        justify-content: space-between;
-        
-        height: 33.33%;
-        flex-wrap: wrap;
-        
-    }
-    
-    .header_container5 {
-        flex-direction: column;
-        display: flex;
-        flex-wrap: wrap;
-        width: 20%;
-        
-        justify-content: space-between;
-        
-        
-    }
-    
-    
-    
-    
-    
-    .hi1{
-        
-    
-        height: 33.33%;
-        
-    }
-    
-    .hi2{
-        
-        flex-wrap: wrap;
-        justify-content: center;
-        
-        width: 33.33%;
-        color: white;
-        font-size: 30px;
-        gap: 20px;
-        
-    }   
-    
-    .hi3{
-        flex-direction: row;
-        display: flex;
-        flex-wrap: wrap;
-        
-        font-size: 30px;
-        width: 33.33%;
-        color: white;
-        font-weight: 700;
-        gap: 20px;
-        visibility: visible;
-    }
-    
-    .hi4{
-        flex-direction: row;
-        display: flex;
-        flex-wrap: wrap;
-        
-        font-size: 30px;
-        gap: 20px;
-        visibility: visible;
-        
-        
-        
-        width: 33.33%;
-    }
-    
-    .hi5{
-        
-        flex-wrap: wrap;
-        
-        visibility: visible;
-        
-    }
-    
-    .hi6{
-        flex-direction: row;
-        
-        display: flex;
-        flex-wrap: wrap;
-        
-        gap: 20px;
-        
-        visibility: visible;
-    
-        
-        
-    }
-    
-    .hi_map{
-        
-        padding-left: 50%;
-        
-        
-        height: 50%;
-        width: 50%;
-        visibility: visible;
-        
-        
-    }
-    
-    .bar_menu{
-        visibility: hidden;
-    }
-    
-    
-    
-    .title_container{
-        
-        gap: 20px;
-    }
+  .input_style {
+    width: 20vw;
+    height: 2vw;
+  }
 
+  .formulario {
+    width: 50%;
+  }
 
-    /******************************************FOOTER***************DESKTOP****************************/
-    .footer_container {
-    
-        flex-direction: row;
-        display: flex;
-        align-items: center;
-        
-    
-        height: 200px;
-        
-        flex-wrap: wrap;
-        
-        
-        
-        
-    }
-    
-    .fc1{
-        
-        color: red;
-        width: 10%;
-        
-        
-    }
-    
-    .fc2{
-        flex-direction: column;
-        display: flex;
-        flex-wrap: wrap;
-        
-        justify-content: center;
-        justify-content: space-between;
-        width: 20%;
-        visibility: visible;
-    }
-    
-    .fc3{
-        
-        width: 65%;
-        visibility: visible;
-        
-    }
-    
-    .logo{
-        width: 20%;
-        
-        
-    }
-    
-    .playstore_icon{
-        visibility: hidden;
-        height: 0px;
-        width: 5px;
-    }
-    
-    .p_icon{
-        
-        font-size: 0;
-    }
+  .main_izq {
+    background-image: url(../imagenes/Screenshot_5.jpg);
+    background-size: cover;
+    width: 25%;
+  }
 
-    /*****************************************MAIN DESKTOP***********************************************/
-    .ingresar_button{
-        
-        width: 20vw;
-        height: 5vw;
-        font-size: 2vw;
-        
-    
-    }
-
-    .input_style{
-       
-        width: 20vw;
-        height: 2vw;
-        
-    }
-
-    .formulario{
-        
-        width: 50%;
-    }
-    
-    
-    
-    .main_izq{
-        background-image: url(../imagenes/Screenshot_5.jpg);
-        background-size: cover;
-        width: 25%;
-    }
-    
-    .main_der{
-        background-image: url(../imagenes/Screenshot_1.jpg);
-        background-size: cover;
-        width: 25%;
-    }
+  .main_der {
+    background-image: url(../imagenes/Screenshot_1.jpg);
+    background-size: cover;
+    width: 25%;
+  }
 }

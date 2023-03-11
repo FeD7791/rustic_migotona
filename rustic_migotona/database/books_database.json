@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "nombre": "categoria",
+    "descripcion": "Libros de Terror",
+    "precio": 0,
+    "imagen": ""
+  },
+  {
+    "id": 3,
+    "nombre": "Relatos de Lovecraft",
+    "descripcion": "Libro de relatos de Horror",
+    "precio": 5000,
+    "imagen": "./imagenes/book.jpg"
+  }
+]

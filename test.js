@@ -1,0 +1,47 @@
+const stringgg = [
+  {
+    id: 0,
+    nombre: "categoria",
+    descripcion: "Juegos de mesa",
+    precio: 0,
+    imagen: "",
+  },
+  {
+    id: 1,
+    nombre: "Colonos de catan",
+    descripcion: "un excelente juego de mesa para cuatro jugadores",
+    precio: 10000,
+    imagen: "./imagenes/colonos.jpg",
+  },
+  {
+    id: 2,
+    nombre: "Mazo de cartas Magic",
+    descripcion: "Mazo de 60 cartas listas para jugar",
+    precio: 7000,
+    imagen: "./imagenes/challenger_deck.jpg",
+  },
+  {
+    id: 3,
+    nombre: "Relatos de Lovecraft",
+    descripcion: "Libro de relatos de Horror",
+    precio: 5000,
+    imagen: "./imagenes/book.jpg",
+  },
+  {
+    id: 4,
+    nombre: "Seven Wonders",
+    descripcion: "un excelente juego de mesa para siete jugadores",
+    precio: 12000,
+    imagen: "./imagenes/sevenwonders.jpg",
+  },
+  {
+    id: 5,
+    nombre: "Bariesius",
+    descripcion: "un excelente juego de mesa para cuatro jugadores",
+    precio: 8000,
+    imagen: "./imagenes/bariesius.jpg",
+  },
+];
+
+const parsed = JSON.stringify(stringgg);
+console.log(JSON.parse(parsed));

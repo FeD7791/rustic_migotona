@@ -1,0 +1,276 @@
+.header_container0 {
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  width: 100%;
+  /* border: solid red 2px; */
+}
+
+.header_container1 {
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 57%;
+  /* border: solid blue 2px; */
+}
+
+.header_container2 {
+  flex-direction: column;
+  display: flex;
+  align-items: baseline;
+
+  width: 100%;
+  /* border: solid green 2px; */
+}
+
+.header_container3 {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+
+  justify-content: left;
+  /* border: solid yellow 2px; */
+}
+
+.header_container4 {
+  flex-direction: row;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  height: 2px;
+  /* border: solid orange 2px; */
+}
+
+.header_container5 {
+  flex-direction: row;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  /* border: solid cyan 2px; */
+}
+
+.hi1 {
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  display: flex;
+
+  width: 100%;
+  font-family: myFirstFont;
+
+  text-align: left;
+
+  align-items: flex-start;
+}
+
+.hi2 {
+  flex-direction: row;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 500px;
+
+  font-size: 20px;
+  visibility: visible;
+  color: red;
+}
+
+.hi3 {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2px;
+
+  visibility: hidden;
+}
+
+.hi4 {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2px;
+  visibility: hidden;
+}
+
+.hi5 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  font-family: second_font;
+  width: 50%;
+  visibility: hidden;
+}
+
+.hi6 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  visibility: hidden;
+
+  width: 50%;
+}
+
+.hi_map {
+  visibility: hidden;
+}
+
+.bar_menu {
+  visibility: visible;
+  color: white;
+
+  padding: 10px;
+}
+
+.map_bar_menu {
+  flex-direction: row;
+  display: flex;
+}
+
+.title_container {
+  flex-direction: row;
+  display: flex;
+
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+p {
+  font-size: 2vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .header_container0 {
+    background-color: black;
+  }
+
+  .header_container1 {
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+  }
+
+  .header_container2 {
+    width: 90%;
+  }
+
+  .header_container3 {
+    height: 33.33%;
+    justify-content: center;
+    justify-content: space-between;
+    visibility: visible;
+    flex-wrap: wrap;
+  }
+
+  .header_container4 {
+    /* justify-content: space-between; */
+
+    height: 60px;
+    flex-wrap: wrap;
+
+    background-color: gray;
+  }
+
+  .header_container5 {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+
+    justify-content: space-between;
+  }
+
+  .hi1 {
+    height: 33.33%;
+    /* border: solid red 2px; */
+  }
+
+  .hi2 {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 18%;
+    color: white;
+    font-size: 30px;
+    gap: 20px;
+    /* border: solid blue 2px; */
+  }
+
+  .hi3 {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 30px;
+    width: 18%;
+    color: white;
+    font-weight: 700;
+    gap: 20px;
+    visibility: visible;
+    /* border: solid yellow 2px; */
+  }
+
+  .hi4 {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 30px;
+    gap: 20px;
+    visibility: visible;
+
+    width: 18%;
+    /* border: solid orange 2px; */
+  }
+
+  .hi5 {
+    flex-wrap: wrap;
+    width: 18%;
+    visibility: visible;
+    /* border: solid cyan 2px; */
+  }
+
+  .hi6 {
+    flex-direction: row;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+    width: 18%;
+    visibility: visible;
+    /* border: solid white 2px; */
+  }
+
+  .hi_map {
+    padding-left: 50%;
+
+    height: 50%;
+    width: 50%;
+    visibility: visible;
+  }
+
+  .bar_menu {
+    visibility: hidden;
+  }
+
+  .title_container {
+    gap: 20px;
+  }
+}

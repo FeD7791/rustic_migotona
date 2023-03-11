@@ -24,8 +24,34 @@ router_web.get("/", (req, res) => {
 });
 
 //Productos_escritorio
+
+//TCG
 router_web.get("/tcg", (req, res) => {
   const productos = JSON.parse(fs.readFileSync("./database/tcg_database.json"));
+  res.render("desktop_principal.ejs", { productos });
+});
+
+//TABLETOP
+router_web.get("/tabletop", (req, res) => {
+  const productos = JSON.parse(
+    fs.readFileSync("./database/tabletop_database.json")
+  );
+  res.render("desktop_principal.ejs", { productos });
+});
+
+//BOOKS
+router_web.get("/books", (req, res) => {
+  const productos = JSON.parse(
+    fs.readFileSync("./database/books_database.json")
+  );
+  res.render("desktop_principal.ejs", { productos });
+});
+
+//MANGA
+router_web.get("/manga", (req, res) => {
+  const productos = JSON.parse(
+    fs.readFileSync("./database/manga_database.json")
+  );
   res.render("desktop_principal.ejs", { productos });
 });
 

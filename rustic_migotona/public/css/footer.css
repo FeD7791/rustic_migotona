@@ -1,0 +1,114 @@
+/*FOOTER*/
+
+.footer_container {
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 100%;
+  /*Fix Footer Botom*/
+  /* position: fixed;
+  left: 0;
+  bottom: 0; */
+}
+
+.fc1 {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 30%;
+}
+
+.fc2 {
+  flex-direction: row;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+
+  width: 5%;
+  visibility: hidden;
+}
+
+.fc3 {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: second_font;
+  align-items: center;
+  width: 5%;
+  visibility: hidden;
+}
+
+.playstore_icon {
+  flex-direction: column;
+  display: flex;
+  visibility: visible;
+  color: white;
+  align-items: center;
+  gap: 5px;
+  width: 60%;
+  height: 100%;
+}
+
+.icon_p {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+
+  align-items: center;
+}
+
+.p_icon {
+  color: white;
+  font-size: 5vw;
+}
+
+@media only screen and (min-width: 600px) {
+  /* FOOTER*/
+  .footer_container {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+
+    height: 200px;
+
+    flex-wrap: wrap;
+  }
+
+  .fc1 {
+    color: red;
+    width: 10%;
+  }
+
+  .fc2 {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    justify-content: space-between;
+    width: 20%;
+    visibility: visible;
+  }
+
+  .fc3 {
+    width: 65%;
+    visibility: visible;
+  }
+
+  .playstore_icon {
+    visibility: hidden;
+    height: 0px;
+    width: 5px;
+  }
+
+  .p_icon {
+    font-size: 0;
+  }
+}

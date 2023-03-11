@@ -1,20 +1,23 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 const PORT = 3000;
+var path = require("path");
 
 //VIEWS
-app.set('view engine','ejs'); //Se fija ejs como el motor para las vistas
-app.set('views' , __dirname + '/views'); //Se fija una ruta dinamica (con __dirname)
+app.set("view engine", "ejs"); //Se fija ejs como el motor para las vistas
+app.set("views", path.resolve(__dirname, "views")); //Se fija una ruta dinamica (con __dirname)
 
 //STATIC FILES
-app.use(express.static('public'))
-app.use('/css', express.static(__dirname + 'public/css'))
-app.use('/scripts_js', express.static(__dirname + 'public/scripts_js'))
+app.use(express.static(path.resolve(__dirname, "public")));
+// app.use('/css', express.static(__dirname + 'public/css'))
+// app.use('/scripts_js', express.static(__dirname + 'public/scripts_js'))
+
+app.locals.secret = 4;
 
 //Rutas de las vistas web
-app.use('/', require('./routes/rutas_web'))
+app.use("/", require("./routes/rutas_web"));
 //Rutas de los productos
-app.use('/products',require('./routes/rutas_productos'))
+app.use("/products", require("./routes/rutas_productos"));
 
 //Listen port
-app.listen(PORT , ()=> console.log('listening on port',PORT));
+app.listen(PORT, () => console.log("listening on port", PORT));
