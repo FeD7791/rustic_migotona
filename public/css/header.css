@@ -1,0 +1,55 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/Silkscreen-Bold.ttf);
+}
+
+@font-face {
+  font-family: second_font;
+  src: url(../fonts/DynaPuff-Bold.ttf);
+}
+
+.fonts {
+  font-family: myFirstFont;
+}
+
+html * {
+  font-family: second_font;
+  /* overflow-x: hidden; */
+}
+
+.hi_map {
+  visibility: hidden;
+  height: 0;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: royalblue;
+}
+.title {
+  font-size: 50px;
+  color: red;
+}
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+  p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .hi_map {
+    visibility: visible;
+  }
+}

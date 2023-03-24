@@ -1,0 +1,50 @@
+[
+  {
+    "nombre": "Jorge Federico",
+    "apellido": "Bustillos Rava",
+    "correo": "fedepicka@hotmail.com",
+    "fecha_de_nacimiento": "1991-09-11",
+    "contrasenia": "contrasenia098767",
+    "productos": []
+  },
+  {
+    "nombre": "Jorge Federico",
+    "apellido": "Rava",
+    "correo": "fedepicka@hotmail.com",
+    "fecha_de_nacimiento": "2022-11-15",
+    "contrasenia": "asdlfkj34234",
+    "productos": []
+  },
+  {
+    "nombre": "teresa",
+    "apellido": "Rava",
+    "correo": "teresarava@gmail.com",
+    "fecha_de_nacimiento": "2022-11-24",
+    "contrasenia": "asdf234",
+    "productos": []
+  },
+  {
+    "nombre": "beatriz",
+    "apellido": "bustillos rava",
+    "correo": "pabea@hotmail.com",
+    "fecha_de_nacimiento": "1993-03-01",
+    "contrasenia": "$2b$08$EnInccN/Of/cZvmFzCC56e/lBfFJ.FdPTg88i28ZT7x/vVooVm1Va",
+    "productos": []
+  },
+  {
+    "nombre": "jorge",
+    "apellido": "bustillos",
+    "correo": "jorgebustillos@gmail.com",
+    "fecha_de_nacimiento": "2022-11-16",
+    "contrasenia": "$2b$08$eGInraP7XgqiWynSiuJtEO2Y5Gsa3KJ6xArHmMeQeiOtoVERyf8KS",
+    "productos": []
+  },
+  {
+    "nombre": "pakito",
+    "apellido": "parkour",
+    "correo": "pako@gmail.com",
+    "fecha_de_nacimiento": "2022-06-15",
+    "contrasenia": "$2b$08$K5DjbC0eToy9UgGbaC0fZuiUfbuQpxnro8JdEShiYGTLfH63xmz9.",
+    "productos": []
+  }
+]

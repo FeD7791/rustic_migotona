@@ -1,0 +1,63 @@
+<%- include('./partials/header.ejs') %>
+<% if(producto){ %>
+<div
+  style="
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  "
+>
+  <h1 style="color: royalblue"><%= producto.nombre %></h1>
+  <div
+    style="
+      height: 200px;
+      width: 200px;
+      background-image: url('<%=producto.imagen %>');
+      border: solid 3px black;
+      border-radius: 20px;
+      background-size: cover;
+    "
+  ></div>
+  
+  <p style="color: black"><%= producto.precio %></p>
+  <p style="color: black"><%= producto.descripcion %></p>
+  <div style="flex-direction: row; display: flex">
+    <button id="button_plus" class="button-secondary pure-button">+</button>
+    <input id="input_space" style="color: black" value="0" min="0" type="number"></input>
+    <button id="button_minus" class="button-secondary pure-button">-</button>
+  </div>
+  <button id="add_button" class="pure-button pure-button-primary" style="margin-top: 20px;">Agregar</button>
+  <button id="cart_button" class="pure-button pure-button-primary" style="margin-top: 20px;margin-bottom: 50px;">
+    Ir al carrito
+  </button>
+</div>
+
+<% } %>
+<script src="./scrpits_js/detail_product.js"></script>
+<script>
+    
+  const add_button = document.getElementById("add_button");
+  let the_product = `<%- JSON.stringify(producto)  %>`;
+  const the_product_2 = JSON.parse(the_product);
+
+  function add() {
+    //input_space defined in the other script tag
+    
+    if (input_space.value >= 1) {
+      the_product_2.cantidad = input_space.value;
+      let product = JSON.stringify(the_product_2);
+      localStorage.setItem("<%- producto.id %>", product);
+      
+      alert("Producto Agregado");
+    } else {
+      alert("No hay productos");
+    }
+    
+    
+    
+    
+  }
+  add_button.addEventListener("click", add);
+</script>
+<%- include('./partials/footer.ejs') %>

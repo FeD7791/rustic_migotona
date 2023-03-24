@@ -1,0 +1,28 @@
+<%- include('./partials/header.ejs') %>
+<body
+  style="
+    /* margin-top: 300px; */
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  "
+>
+  <h1><%= mensaje %></h1>
+
+  <button onclick="return_desktop()">Aceptar</button>
+</body>
+<%- include('./partials/footer.ejs') %>
+<style>
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+
+<script>
+  function return_desktop() {
+    location.href = "/";
+  }
+</script>

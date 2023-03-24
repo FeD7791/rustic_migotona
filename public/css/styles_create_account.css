@@ -1,0 +1,111 @@
+/*body*/
+.body_container {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vw;
+  margin: 0px;
+
+  overflow-x: hidden;
+}
+
+/****************************************MAIN MOBILE*********************************************************/
+button:hover {
+  background-color: transparent;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+}
+
+.input_style {
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid black 2px;
+  width: 40vw;
+  height: 5vw;
+  border-radius: 10px;
+}
+
+.ingresar_button {
+  text-align: center;
+  box-sizing: border-box;
+
+  border: solid black 2px;
+  width: 25vw;
+  height: 10vw;
+  border-radius: 10px;
+}
+
+.ingresar_button:hover {
+  background-color: transparent;
+}
+
+.formulario {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 98%;
+  padding: 10px;
+}
+
+.main {
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.main_izq {
+  /*border: solid blue 2px;*/
+  width: 1%;
+  background-image: none;
+}
+
+.main_der {
+  /*border: solid red 2px;*/
+  width: 1%;
+  background-image: none;
+}
+
+.form_header {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/***************************************Media Query**************************************************/
+@media only screen and (min-width: 600px) {
+  /*****************************************MAIN DESKTOP***********************************************/
+  .ingresar_button {
+    width: 20vw;
+    height: 5vw;
+    font-size: 2vw;
+  }
+
+  .input_style {
+    width: 20vw;
+    height: 2vw;
+  }
+
+  .formulario {
+    width: 50%;
+  }
+
+  .main_izq {
+    background-image: url(../imagenes/Screenshot_5.jpg);
+    background-size: cover;
+    width: 25%;
+  }
+
+  .main_der {
+    background-image: url(../imagenes/Screenshot_1.jpg);
+    background-size: cover;
+    width: 25%;
+  }
+}

@@ -1,0 +1,108 @@
+
+  <head>
+    <script
+      src="https://kit.fontawesome.com/68bc1fc849.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles_create_account.css" />
+    
+  </head>
+  <%- include('./partials/header.ejs') %>
+  <body>
+    
+    <main class="main">
+      
+      <div class="formulario">
+        <div class="form_header">
+          <h1>Crear Cuenta</h1>
+          <button style="border-radius: 10px">
+            <i class="fa-brands fa-facebook fa-2x" style="color: blue"></i>
+          </button>
+          <button style="border-radius: 10px">
+            <i class="fa-brands fa-google fa-2x" style="color: red"></i>
+          </button>
+        </div>
+        <form
+          id="form_crear_ceunta"
+          class="formulario"
+          action="/register"
+          method="post"
+        >
+          <fieldset name="datos_creacion_cuenta" class="formulario">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nombre"
+              class="input_style"
+            />
+            <p id="log_name" style="font-size: 10px; color: red">
+                <% let array1 = validaciones.filter((element)=>{return element.param == 'name'}) %>
+                <% if(array1.length > 0) {%>
+                <%=array1[0].msg %> 
+                <% } %>
+            </p>
+            <input
+              type="text"
+              id="last_name"
+              name="lastname"
+              placeholder="Apellido"
+              class="input_style"
+            />
+            <p id="log_apellido" style="font-size: 10px; color: red">
+                <% let array2 = validaciones.filter((element)=>{return element.param == 'lastname'}) %>
+                <% if(array2.length > 0) {%>
+                <%=array2[0].msg %> 
+                <% } %></p>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              class="input_style"
+            />
+            <p id="log_correo" style="font-size: 10px; color: red">
+                <% let array3 = validaciones.filter((element)=>{return element.param == 'email'}) %>
+                <% if(array3.length > 0) {%>
+                <%=array3[0].msg %> 
+                <% } %></p>
+            <input
+              type="date"
+              id="birthdate"
+              name="bdate"
+              placeholder="Fecha de Nacimiento"
+              class="input_style"
+            />
+            <p id="log_f_nacimiento" style="font-size: 10px; color: red">
+                <% let array4 = validaciones.filter((element)=>{return element.param == 'bdate'}) %>
+                <% if(array4.length > 0) {%>
+                <%=array4[0].msg %> 
+                <% } %></p>
+            <input
+              type="password"
+              id="pwd"
+              name="key"
+              placeholder="Contraseña"
+              class="input_style"
+            />
+            <p id="log_contrasenia" style="font-size: 10px; color: red">
+                <% let array5 = validaciones.filter((element)=>{return element.param == 'key'}) %>
+                <% if(array5.length > 0) {%>
+                <% array5.forEach(element => { %>
+                    <%=element.msg %>
+               <% }) %>    
+                 
+                <% } %></p>
+            
+                
+            
+          </fieldset>
+          <input type="submit" value="Crear Cuenta" class="ingresar_button" />
+        </form>
+        
+      
+    </main>
+    
+  </body>
+  <%- include('./partials/footer.ejs') %>
+
