@@ -27,7 +27,7 @@ At first all products will be displayed, but can be filtered using the **categor
 
 ---
 
-## _About imagen_
+#### _About imagen_
 
 This section contains just a url path to a folder where images are stored
 
@@ -37,7 +37,7 @@ In order to see details of a product a user must first log in.
 
 Default user is _Anonimo_
 
-At the login page user will be requested to give an **email** and a **pasword**
+At the login page user will be requested to give an **email** and a **password**
 
 The server first will check if that user exists based on the email
 Then the server will check if the password is correct
