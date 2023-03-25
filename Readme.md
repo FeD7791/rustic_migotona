@@ -5,6 +5,22 @@ Migotona Ryujin is an e-commerce made with
 -EJS (For the views templates)
 -PURE (For some CSS Styles)
 -sequelize (to interact with SQL database using Node)
+## Run Project
+run **npm install** command to install the dependencies
+Once you have conected the database:
+run **npm start**
+## Connect With SQL database
+Change the **config/config.json** file with your database credentials:
+{<br />
+  "development": {<br />
+    "username": "root", [name is usually root by default]<br />
+    "password": "you_password",<br />
+    "database": "usuarios_db",<br />
+    "host": "127.0.0.1",<br />
+    "dialect": "mysql"<br />
+  }<br />
+run **sequelize db:create** to create the database
+run **sequelize db:migrate** to run the migrations
 
 ## Objectives
 
