@@ -27,8 +27,11 @@ At first all products will be displayed, but can be filtered using the **categor
 
 ---
 
+<<<<<<< HEAD
 ![desktop](./pictures_for_readme/desktop.png)
 
+=======
+>>>>>>> f5e72b9dad5b385d1016061079478796d3d5e7b6
 #### _About imagen_
 
 This section contains just a url path to a folder where images are stored
