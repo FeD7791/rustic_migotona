@@ -73,6 +73,7 @@ A check of the user input is done in the server side using **express-validator**
 In order to ensure users account security , the key (password) will be hased before user is saved into the database. To hash the key **bcrypt** middleware is used.
 
 Once the account is created a user session will be established using **express-session**. Then the user will be able to see the products and add them to the cart.
+
 ![createaccount](./pictures_for_readme/create_account.png)
 
 ### 4 Create a persisting cart for the user
