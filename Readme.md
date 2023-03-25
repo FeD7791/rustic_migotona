@@ -27,7 +27,9 @@ At first all products will be displayed, but can be filtered using the **categor
 
 ---
 
-## _About imagen_
+![desktop](./pictures_for_readme/desktop.png)
+
+#### _About imagen_
 
 This section contains just a url path to a folder where images are stored
 
@@ -37,7 +39,7 @@ In order to see details of a product a user must first log in.
 
 Default user is _Anonimo_
 
-At the login page user will be requested to give an **email** and a **pasword**
+At the login page user will be requested to give an **email** and a **password**
 
 The server first will check if that user exists based on the email
 Then the server will check if the password is correct
@@ -49,6 +51,7 @@ For a succesfull login a page notifiying this will be rendered , and also the na
 A user session will be created using **express-session**
 
 The user can logout from the _cerrar session_ link this will destroy the session
+![login](./pictures_for_readme/login.png)
 
 ### 3 Make a Create Accoun system
 
@@ -68,9 +71,18 @@ A check of the user input is done in the server side using **express-validator**
 In order to ensure users account security , the key (password) will be hased before user is saved into the database. To hash the key **bcrypt** middleware is used.
 
 Once the account is created a user session will be established using **express-session**. Then the user will be able to see the products and add them to the cart.
+![createaccount](./pictures_for_readme/create_account.png)
 
 ### 4 Create a persisting cart for the user
 
 Items selected by the user will persist on page reload and time using **Local Storage**
 
 The user can vary the amoun of a particular item and the total price of the cart will be updated
+
+![cart](./pictures_for_readme/cart.png)
+
+### 5 All the design of the page is responsive
+
+The page has a responsive design altering between views with a breakpoint of 768px, this is by implementing the grids of PURE https://purecss.io/grids/ and css media queries.
+
+![responsive](./pictures_for_readme/responsive.png)
